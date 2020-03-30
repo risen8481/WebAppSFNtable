@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <table id="proformaGrid" class="responsive no-wrap table-hover table-striped" cellspacing="0" border="0">
+
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Proforma</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</br>
+<section>
+    <div id="soapParserResult">
+
+    </div>
+</section>
+<script>
+    function gettoken() {
+    var token = '@Html.AntiForgeryToken()';
+    token = $(token).val();
+    return token;
+}
+</script>
